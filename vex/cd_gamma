@@ -1,0 +1,2 @@
+// Gamma a color point attribute
+v@Cd = pow(v@Cd, (1/(1/chf("gamma"))));

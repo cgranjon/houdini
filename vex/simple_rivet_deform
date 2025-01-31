@@ -1,0 +1,8 @@
+// Rivet Deform
+// Deform input (scattered) points
+
+float dist = xyzdist(1, @P, i@prim, v@uvw);
+vector pos = primuv(2, "P", i@prim, v@uvw);
+v@P = pos;
+vector nrm = primuv(2, "N", i@prim, v@uvw);
+v@N = nrm;

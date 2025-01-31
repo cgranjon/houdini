@@ -1,0 +1,8 @@
+// Check if two meshes match
+// The remaining points are different
+
+v@P -= v@opinput1_P;
+
+if(v@P == {0, 0, 0}){
+    removepoint(0, @ptnum);
+}
