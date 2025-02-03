@@ -6,6 +6,8 @@ def get_geometry_primitive_counts():
     # Get all Geometry (Sop) nodes in the scene
     obj_nodes = hou.node("/obj").allSubChildren()
     geo_nodes = [node for node in obj_nodes if node.type().category().name() == "Object" and node.type().name() == "geo"]
+    # Get only Stem asset groups
+    # assetgrp_nodes = [node for node in geo_nodes if node.name()=="assetgrp_*"]
 
     for geo_node in geo_nodes:
         # Get the display node (SOP inside the geometry node)

@@ -1,4 +1,4 @@
-import hou
+import hou # type: ignore
 
 def get_geometry_primitive_counts():
     geo_prim_counts = {}
